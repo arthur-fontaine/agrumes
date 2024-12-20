@@ -1,5 +1,12 @@
 # @agrume/client
 
+## 3.0.5
+
+### Patch Changes
+
+- Updated dependencies [6457bd6]
+  - @agrume/types@3.4.0
+
 ## 3.0.4
 
 ### Patch Changes

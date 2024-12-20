@@ -1,5 +1,11 @@
 # @agrume/types
 
+## 3.4.0
+
+### Minor Changes
+
+- 6457bd6: Create skipModules option
+
 ## 3.3.0
 
 ### Minor Changes

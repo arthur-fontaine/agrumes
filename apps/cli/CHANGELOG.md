@@ -1,5 +1,20 @@
 # @agrume/server
 
+## 3.5.0
+
+### Minor Changes
+
+- 6457bd6: Create skipModules option
+
+### Patch Changes
+
+- Updated dependencies [6457bd6]
+  - @agrume/internals@3.5.0
+  - @agrume/types@3.4.0
+  - @agrume/builder@3.1.3
+  - @agrume/core@3.4.1
+  - @agrume/plugin@3.2.4
+
 ## 3.4.2
 
 ### Patch Changes

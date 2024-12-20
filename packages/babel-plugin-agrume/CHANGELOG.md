@@ -1,5 +1,19 @@
 # babel-plugin-agrume
 
+## 3.2.0
+
+### Minor Changes
+
+- 6457bd6: Create skipModules option
+
+### Patch Changes
+
+- Updated dependencies [6457bd6]
+  - @agrume/internals@3.5.0
+  - @agrume/types@3.4.0
+  - @agrume/core@3.4.1
+  - agrume@3.1.8
+
 ## 3.1.6
 
 ### Patch Changes

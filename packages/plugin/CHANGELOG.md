@@ -1,5 +1,15 @@
 # @agrume/plugin
 
+## 3.2.4
+
+### Patch Changes
+
+- Updated dependencies [6457bd6]
+  - @agrume/internals@3.5.0
+  - @agrume/types@3.4.0
+  - babel-preset-agrume@3.0.10
+  - @agrume/core@3.4.1
+
 ## 3.2.3
 
 ### Patch Changes

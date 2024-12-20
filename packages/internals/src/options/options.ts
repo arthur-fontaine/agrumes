@@ -10,6 +10,7 @@ const defaultOptions: Required<GlobalOptions> = {
   getClient: undefined,
   logger: undefined,
   prefix: '/api/',
+  skipModules: [],
   tunnel: undefined,
 }
 

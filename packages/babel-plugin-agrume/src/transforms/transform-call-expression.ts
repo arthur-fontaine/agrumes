@@ -2,6 +2,7 @@ import { createRequire } from 'node:module'
 
 import importSync from 'import-sync'
 import { createRoute } from '@agrume/core'
+import { state } from '@agrume/internals'
 import type { NodePath, PluginPass, types as babelTypes } from '@babel/core'
 import agrumePackageJson from 'agrume/package.json'
 
@@ -104,6 +105,11 @@ function runLoader(loader: string, filePath: string) {
   const _require = createRequire(filePath.startsWith('file://') ? filePath : `file://${filePath}`)
 
   function _import(moduleName: string) {
+    const skipModules = state.get().options.skipModules ?? []
+    if (skipModules.some(s => s.test(moduleName))) {
+      return {}
+    }
+
     const modulePath = _require.resolve(moduleName)
     const module = importSync(modulePath)
 

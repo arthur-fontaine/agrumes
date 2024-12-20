@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { utils } from '@agrume/internals'
+import { state, utils } from '@agrume/internals'
 import { Tunnel } from '@agrume/tunnel'
 import { program } from 'commander'
 import { createServer } from './create-server'
@@ -23,6 +23,11 @@ program
   .option('--allow-unsafe', 'Allow loading routes from node_modules')
   .action(async (options) => {
     const config = await utils.readConfig()
+
+    state.set((state) => {
+      state.options.skipModules = config.skipModules
+      return state
+    })
 
     await createServer({
       allowUnsafe: options.allowUnsafe,

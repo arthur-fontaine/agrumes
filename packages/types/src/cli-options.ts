@@ -6,6 +6,7 @@ export type CliOptions = {
   host?: string | undefined
   port?: number | undefined
   prefix?: PluginOptions['prefix'] | undefined
+  skipModules?: RegExp[] | undefined
   watch?: boolean | undefined
 } & (
   | { externalUrl?: GlobalOptions['baseUrl'], tunnel?: never | undefined }

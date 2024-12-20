@@ -13,6 +13,7 @@ export type GlobalOptions = {
     info?: typeof console.info
   } | undefined
   prefix?: '/' | `/${string}/`
+  skipModules?: RegExp[] | undefined
 } & (
   | {
     baseUrl?: `${string}/`
